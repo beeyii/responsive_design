@@ -1,0 +1,211 @@
+
+body {
+    background-color: white;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+p {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: navy;
+}
+
+a:active, a:hover{
+    border-bottom: 2.5px groove gold;
+}
+
+.header {
+    padding-bottom: 25px;
+    display: block;
+}
+
+.header img {
+    height: 30vh;
+    width: 35vh;
+}
+
+.h_brian {
+    display: block;
+    font-size: 26px;
+    position: relative;
+    padding-top: 5px;
+}
+
+.h_intro {
+    margin: 0 auto; /* makes the div centered */
+    width: 65%;
+    font-size: 4vmin;
+    font-weight: normal;
+    font-family: fantasy;
+    padding: 10px
+}
+
+.h_general {
+    display: block;
+    font-family: 'Gentium Basic', serif;
+    font-size: 5vmin;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav_bar{
+    font-weight: bold;
+}
+
+.current{
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2px goldenrod;
+    color: black;
+}
+
+.current img {
+    width: 3vh;
+    height: 2vh;
+}
+
+.navy_container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.navy_container img{
+    width: 35vh;
+    height: 35vh;
+    align-self: center;
+    justify-self: center;
+}
+
+.container_flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.container_flexbox img{
+    width: 50vmin;
+    height: 35vmin;
+}
+
+.container_grid {
+    display: grid;
+    padding-top: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.container_grid img{
+    width:100%;
+    align-self: stretch;
+}
+
+a.pics:active, a.pics:hover{
+    position: relative;
+    width: 90%;
+    border-radius: 5%;
+    border: 4px double gold;
+    cursor: zoom-in;
+    padding: 5%;
+}
+
+a.skip{
+	position: absolute;
+	left: -99999px;
+    top: 0px;
+    display: block;
+}
+
+a.skip:focus{
+	position: relative;
+    left: 0px;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.p_general{
+    margin: 0 auto; /* makes the div centered */
+    width: 75%;
+    padding-bottom: 4vmin;
+}
+
+p.p_general::first-letter {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.p_index {
+    margin: 0 auto; /* makes the div centered */
+    width: 75%;
+    text-align: center;
+}
+
+.p_title {
+    margin: 0 auto; /* makes the div centered */
+    width: 75%;
+    text-decoration: underline;
+}
+
+.ul_edu{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.li_edu {
+    margin: 0 auto; /* makes the div centered */
+    width: 35vw;
+    text-align: left;
+    list-style-type: square;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.p_contact {
+    margin: 0 auto; /* makes the div centered */
+    width: 75%;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.p_links {
+    font-size: 4vmin;
+    margin: 0 auto; /* makes the div centered */
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+}
+
+.p_links img {
+    width: 8%;
+    align-self: center;
+    vertical-align: middle;
+}
+
+.foot {
+    padding: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+    .container_grid{
+    grid-template-columns: 2fr 2fr 2fr 1.5fr;
+    }
+}

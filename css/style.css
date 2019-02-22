@@ -1,6 +1,6 @@
 
 body {
-    background-color: white;
+    background-color: #082943;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-align: center;
     font-size: 22px;
@@ -35,11 +35,11 @@ p {
 
 a{
     text-decoration: none;
-    color: navy;
+    color: gold;
 }
 
 a:active, a:hover{
-    border-bottom: 2.5px groove gold;
+    border-bottom: 2.5px solid gold;
 }
 
 
@@ -47,6 +47,7 @@ a:active, a:hover{
 .header {
     padding-bottom: 25px;
     display: block;
+    background-color: #082943;
 }
 
 .header img {
@@ -59,6 +60,7 @@ a:active, a:hover{
     font-size: 26px;
     position: relative;
     padding-top: 5px;
+    color: aliceblue;
 }
 
 .h_intro {
@@ -67,27 +69,32 @@ a:active, a:hover{
     font-size: 3vmin;
     font-weight: normal;
     font-family: fantasy;
-    padding-top: 5vh;
+    padding: 5vh;
+    background-color: lemonchiffon;
+    box-shadow: 5px 5px #888888;
 }
 
 .h_general {
     display: block;
     font-family: 'Gentium Basic', serif;
     font-size: 5vmin;
-    padding-top: 10px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
+    background-color: lemonchiffon;
+    box-shadow: 5px 5px #888888;
 }
 
 .nav_bar{
     font-weight: bold;
+    padding-bottom: 3%;
 }
 
 .current{
     text-transform: uppercase;
-    -webkit-text-stroke: 0.2px goldenrod;
-    color: black;
+    -webkit-text-stroke: 0.5px goldenrod;
+    color: white;
 }
 
 .current img {
@@ -161,8 +168,10 @@ a.skip:focus{
 
 .p_general{
     margin: 0 auto; /* makes the div centered */
-    width: 75%;
-    padding-bottom: 4vmin;
+    width: 80%;
+    padding: 4vmin;
+    color: aliceblue;
+    box-shadow: 2px 2px #888888;
 }
 
 p.p_general::first-letter {
@@ -175,28 +184,35 @@ p.p_general::first-letter {
     margin: 0 auto; /* makes the div centered */
     width: 75%;
     text-align: center;
+    color: aliceblue;
 }
 
 .p_title {
     margin: 0 auto; /* makes the div centered */
     width: 75%;
     text-decoration: underline;
+    color: aliceblue;
 }
 
 .ul_edu{
     margin: 0 auto;
-    padding: 0 auto;
-    font-style: italic;
+    padding-bottom: 2%;
+    width: 80%;
+    text-align: center;
+    /* font-style: italic; */
     font-weight: bold;
+    color: aliceblue;
+    box-shadow: 2px 2px #888888;
 }
 
 .li_edu {
     margin: 0 auto; /* makes the div centered */
-    width: 50vw;
+    width: 78%;
     text-align: left;
     list-style-type: square;
     font-style: normal;
     font-weight: normal;
+    color: aliceblue;
 }
 
 .p_contact {
@@ -204,6 +220,7 @@ p.p_general::first-letter {
     width: 75%;
     padding-bottom: 15px;
     text-align: center;
+    color: aliceblue;
 }
 
 .p_links {
@@ -212,14 +229,33 @@ p.p_general::first-letter {
     width: 70%;
     padding: 10vmin;
     text-align: center;
+    color: aliceblue;
 }
 
 .p_links img {
     align-self: center;
 }
 
+ol {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ol li {
+    margin-left: 5%; 
+}
+
+.p_edu {
+    padding-left: 2%;
+    text-decoration: underline;
+}
+
 .foot {
     padding: 15px;
+}
+
+.div_form {
+    color: aliceblue;
 }
 
 @media only screen and (min-width: 700px) {

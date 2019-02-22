@@ -3,11 +3,29 @@ body {
     background-color: white;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-align: center;
-    font-size: 19px;
+    font-size: 22px;
     line-height: 25px;
     padding-left:  20px;
     padding-right: 20px;
 }
+
+/* Setting Backgrounds images per page */
+
+body.edu_bg {
+    background-image: url("images/michigan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+
+body.navy_bg {
+    background-image: url("images/navy_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    position: relative;
+} 
 
 p {
     display: block;
@@ -23,6 +41,8 @@ a{
 a:active, a:hover{
     border-bottom: 2.5px groove gold;
 }
+
+
 
 .header {
     padding-bottom: 25px;
@@ -44,10 +64,10 @@ a:active, a:hover{
 .h_intro {
     margin: 0 auto; /* makes the div centered */
     width: 65%;
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-weight: normal;
     font-family: fantasy;
-    padding: 10px
+    padding-top: 5vh;
 }
 
 .h_general {
@@ -172,7 +192,7 @@ p.p_general::first-letter {
 
 .li_edu {
     margin: 0 auto; /* makes the div centered */
-    width: 35vw;
+    width: 50vw;
     text-align: left;
     list-style-type: square;
     font-style: normal;
@@ -187,17 +207,15 @@ p.p_general::first-letter {
 }
 
 .p_links {
-    font-size: 4vmin;
+    font-size: 8vmin;
     margin: 0 auto; /* makes the div centered */
     width: 70%;
-    padding: 10px;
+    padding: 10vmin;
     text-align: center;
 }
 
 .p_links img {
-    width: 8%;
     align-self: center;
-    vertical-align: middle;
 }
 
 .foot {
@@ -208,4 +226,8 @@ p.p_general::first-letter {
     .container_grid{
     grid-template-columns: 2fr 2fr 2fr 1.5fr;
     }
+}
+
+@media only screen and (max-width: 415px) {
+/* Mobile view */
 }

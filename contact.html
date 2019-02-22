@@ -7,7 +7,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+        <style>
+            .div_form {
+                margin: 0 auto;
+                width: 50%;
+                text-align: left;
+            }
+            input {
+                display: block;
+                width: 100%;
+            }
+            .message {
+                min-height: 30vh;   
+                text-align: left;
+            }
+            .submit {
+                align-self: center;
+                width: auto;
+            }
+        </style>
     </head>
 
     <body>
@@ -38,18 +61,23 @@
                 <br>
                 Please send me an email or connect with me on LinkedIn.
             </p> 
+
+            <div class="div_form">
+                <form action="https://formspree.io/brianyi@umich.edu" method="POST"> 
+                    <!-- Make sure you push to github if not you won't receive the forms when they submit -->
+                    <label>Name: <input type="text" name="name" placeholder="First Last"></label>
+                    <label>Email: <input type="email" name="email1" placeholder="johndoe@gmail.com"></label>
+                    <label>Email (confirm): <input type="email" name="email2" placeholder="johndoe@gmail.com"></label>
+                    <label>Company: <input type="text" name="employer"></label>
+                    <label>Message: <input type="text" name="message" class="message"></label> 
+                    <input type="submit" value="Send" class="submit">
+                </form>
+            </div>
             <p class="p_links">
-                Email: &nbsp;  <a href="mailto:brianyi@umich.edu"><img src="images/email_icon.png" alt="image of email icon"></a>
-            </p>
-            <p class="p_links">
-                LinkedIn: &nbsp; <a target="blank" href="https://www.linkedin.com/in/brianyi22/"><img src="images/linkedin_icon.png" alt="image of linkedin icon"></a>
+                <a target="blank" href="https://www.linkedin.com/in/brianyi22/"><i class="fab fa-linkedin"></i></a>
+                <a target="blank" href="https://www.github.com/beeyii"><i class="fab fa-github"></i></a>
             </p>
         </main>
-        <!-- <form>
-            <h3>
-                Send me a message:
-            </h3>
-        </form> -->
         <footer class="foot">
             <a href="#top">Back to Top</a>
         </footer>

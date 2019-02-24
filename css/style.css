@@ -89,11 +89,6 @@ a:active, a:hover{
     box-shadow: 5px 5px #888888;
 }
 
-.nav_bar{
-    font-weight: bold;
-    margin-bottom: 3%;
-}
-
 .current{
     text-transform: uppercase;
     -webkit-text-stroke: 0.5px goldenrod;

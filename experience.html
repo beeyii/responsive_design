@@ -8,6 +8,35 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" href="images/icon.png">
         <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+        <style>
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            [class*="nav_bar"] {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 415px) {
+                .nav_bar_m {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width: 47%;
+                    text-align: center;
+                    background-color: cornflowerblue;
+                    color: #ffffff;
+                    box-shadow: 3px 3px white;
+                    margin-bottom: 3%;
+                }
+                a:hover {
+                    background-color: navy;
+                    color: white;
+                }
+            }        
+        </style>
     </head>
 
     <body>
@@ -15,7 +44,7 @@
         <header class="header">
             <a href = "#jump" class = "skip" tabindex = "0">Skip to Content</a>
             <img src="images/header_logo.png" alt="anchor with Brian Yi's description">
-            <nav class="nav_bar">
+            <nav class="nav_bar_m nav_bar">
                 <a href = "index.html">Home</a> &nbsp;
                 <a href="about.html">About</a> &nbsp;
                 <a href="education.html">Education</a> &nbsp;

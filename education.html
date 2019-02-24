@@ -8,6 +8,35 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" href="images/icon.png">
         <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+        <style>
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            [class*="nav_bar"] {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 415px) {
+                .nav_bar_m {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width: 47%;
+                    text-align: center;
+                    background-color: cornflowerblue;
+                    color: #ffffff;
+                    box-shadow: 3px 3px white;
+                    margin-bottom: 3%;
+                }
+                a:hover {
+                    background-color: navy;
+                    color: white;
+                }
+            }            
+        </style>    
     </head>
 
     <body class="edu_bg">
@@ -15,7 +44,7 @@
         <header class="header">
             <a href = "#jump" class = "skip" tabindex = "0">Skip to Content</a>
             <img src="images/header_logo.png" alt="anchor with Brian Yi's description">
-            <nav class="nav_bar">
+            <nav class="nav_bar_m nav_bar">
                 <a href = "index.html">Home</a> &nbsp;
                 <a href="about.html">About</a> &nbsp;
                 <a href="education.html" class="current"><img class="nav_img" src="images/michigan_icon.png" alt="image of Michigan M">Education</a> &nbsp;
@@ -53,7 +82,7 @@
                         <li>An introduction to programming with a focus on applications in informatics using Python.</li>
                         <li>Focused on fundamental elements of a modern programming language and how to access data on the Internet (API, JSON, etc.).</li>
                         <li>Explored how humans and technology complement one another, including techniques used to coordinate groups of people working together on software development.</li>
-                        <li>Test and debug the program using rigorous techniques</li>
+                        <li>Test and debug the program using rigorous techniques.</li>
                         <li>Introduction to programming and the culture of programming, with a focus on applications for people, by people, and about people.</li>
                         <li>Focused on applications for end-users or analysts, as opposed to back-end or infrastructure software and processing data traces of people’s actions and interactions.</li>
                     </ul>
@@ -70,7 +99,7 @@
                         </ol></li>
                         <li><ol>Focused on a variety of topics and methods that pertain to the field of health informatics:  
                             <li>Healthcare Data (EHR), Standards, and Design</li> 
-                            <li>Health Equity and Health Policy,</li>
+                            <li>Health Equity and Health Policy</li>
                             <li>Health IT Management</li>
                             <li>Health Informatics Evaluation</li>
                             <li>Computable Knowledge Management</li>
@@ -78,18 +107,17 @@
                         <li>Worked with a functioning Electronic Health Record (EHR) system that was built to simulate real-time interface.</li>
                     </ul>
                 </li>
-                <br>
                 <li>
                     <p class="p_edu">EECS280: Programming and Introductory Data Structures: </p>
                     <ul class="li_edu">
-                        <li>Take a problem and consider various possible approaches for solving it</li>
-                        <li>Select an approach or algorithm that provides for a simple, clean, well-structured solution</li>
-                        <li>Convert the algorithm into C++ code, using good design and style</li>
-                        <li>Test and debug the program using rigorous techniques</li>
-                        <li>Understand the concepts of top-down design, data encapsulation, information hiding, and procedural and data abstraction</li>
-                        <li>Design, implement and use complete classes, including constructors, destructors, and operator overloading</li>
-                        <li>Implement dynamic data structures for stacks, queues and lists</li>
-                        <li>Be able to quickly design, implement, test and debug a large scale project independently</li>
+                        <li>Take a problem and consider various possible approaches for solving it.</li>
+                        <li>Select an approach or algorithm that provides for a simple, clean, well-structured solution.</li>
+                        <li>Convert the algorithm into C++ code, using good design and style.</li>
+                        <li>Test and debug the program using rigorous techniques.</li>
+                        <li>Understand the concepts of top-down design, data encapsulation, information hiding, and procedural and data abstraction.</li>
+                        <li>Design, implement and use complete classes, including constructors, destructors, and operator overloading.</li>
+                        <li>Implement dynamic data structures for stacks, queues and lists.</li>
+                        <li>Be able to quickly design, implement, test and debug a large scale project independently.</li>
                     </ul>
                 </li>
                 <li>
@@ -97,16 +125,25 @@
                     <ul class="li_edu">
                         <li>Introduction to computer programming and statistical computing techniques in R and Jupyter Notebook.</li>
                         <li>Applied programming to data extraction, data manipulation, statistical processing and data visualization.</li>
-                        <li>Convert the algorithm into C++ code, using good design and style</li>
-                        <li>Test and debug the program using rigorous techniques</li>
-                        <li>Understand the concepts of top-down design, data encapsulation, information hiding, and procedural and data abstraction</li>
-                        <li>Design, implement and use complete classes, including constructors, destructors, and operator overloading</li>
-                        <li>Implement dynamic data structures for stacks, queues and lists</li>
-                        <li>Be able to quickly design, implement, test and debug a large scale project independently</li>
+                        <li><ol>Focused on a variety of topics and methods that pertain to the field of data science and statistics:  
+                            <li>Data Cleaning</li> 
+                            <li>Data Manipulation</li> 
+                            <li>Data Visualization</li>
+                            <li>Statistical Modeling</li>
+                        </ol></li>
                     </ul>
                 </li>
                 <li>
                     <p class="p_edu">STATS401: Applied Statistical Methods II: </p>
+                    <ul class="li_edu">
+                        <li>An intermediate course in Applied Statistics focusing on the linear model and its applications.</li>
+                        <li>Data analyses in applications drawn across the social sciences, the natural sciences, and public data.</li>
+                        <li><ol>Focused on a variety of topics and methods that pertain to the field of data science and statistics:  
+                            <li>Simple Linear Regression, Two-sample Problems, One-way Analysis of variance (ANOVA)</li>
+                            <li>Multiple Linear Regression, Diagnostics and Model Selection</li>
+                            <li>Two-way Analysis of Variance, Multiple Comparisons using R</li>
+                        </ol></li>
+                    </ul>
                 </li>
             </ul>
 
@@ -125,7 +162,12 @@
                 Accent Hallucination: 
             </p>
             <p class="p_general">
-
+                Implicit bias is defined as referring to the attitudes or stereotypes that affect our understanding, actions, and decisions in an unconscious manner. 
+                The focus of my project was on the implicit bias of race and how it affects people audio and interpretation. 
+                To be quite precise, I basically replicated Donald Rubin’s studies of 
+                NONLANGUAGE FACTORS AFFECTING UNDERGRADUATES' JUDGMENTS OF NONNATIVE ENGLISH-SPEAKING TEACHING ASSISTANTS. 
+                Thus, the basis of my project was the Rubin’s experiment, 
+                and I have also taken a little bit of basic concept and idea from McGowan’s Social Expectation Improves Speech Perception in Noise.
             </p>
         </main>
         <footer class="foot">

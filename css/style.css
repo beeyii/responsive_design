@@ -235,13 +235,13 @@ p.p_general::first-letter {
     align-self: center;
 }
 
-ol {
+ul {
     margin-left: 0;
     padding-left: 0;
 }
 
-ol li {
-    margin-left: 5%; 
+ul li {
+    margin-left: 4%; 
 }
 
 .p_edu {

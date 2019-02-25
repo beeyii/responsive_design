@@ -267,8 +267,5 @@ ul li {
     body {
         font-size: 82%;
     }
-    a.pics:active, a.pics:hover{
-        position: relative;
-        cursor: zoom-in;
-    }
+}
 }

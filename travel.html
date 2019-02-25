@@ -21,22 +21,22 @@
                 width: 100%;
                 margin-bottom: 3%;
             }
-
-            @media only screen and (max-width: 415px) {
-                .nav_bar_m {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    width: 47%;
-                    text-align: center;
-                    background-color: cornflowerblue;
-                    color: #ffffff;
-                    box-shadow: 3px 3px white;
-                    margin-bottom: 3%;
-                }
-                a:hover {
-                    background-color: navy;
-                    color: white;
-                }
+            .nav_bar_m {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 47%;
+                text-align: center;
+                background-color: cornflowerblue;
+                color: #ffffff;
+                box-shadow: 3px 3px white;
+                margin-bottom: 3%;
+            }
+            a:hover {
+                background-color: navy;
+                color: white;
+            }
+            .nav_bar_m:hover {
+                background-color: cornflowerblue;
             }
         </style>
     </head>
@@ -46,7 +46,7 @@
         <header class="header">
             <a href = "#jump" class = "skip" tabindex = "0">Skip to Content</a>
             <img src="images/header_logo.png" alt="anchor with Brian Yi's description">
-            <nav class="nav_bar">
+            <nav class="nav_bar_m nav_bar">
                 <a href = "index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="education.html">Education</a>
